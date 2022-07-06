@@ -1,12 +1,10 @@
 import discord
-import neverSleep
 from discord.ext import commands
 import os
 import asyncio
 import sys
 import time
 
-neverSleep.awake("https://howbot.idrklol.repl.co", False)
 
 intents = discord.Intents.default()
 intents.members = True
@@ -356,4 +354,4 @@ async def help(ctx, admin=None):
         await ctx.reply(embed=ambed, delete_after=60)
 
 
-client.run(os.environ['token'])
+client.run(put token here)
